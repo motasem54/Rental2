@@ -1,2 +1,1 @@
-# Rental2
-rentalfix project
+# RentalSys

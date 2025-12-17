@@ -1,0 +1,801 @@
+/* assets/css/responsive.css - Responsive Design */
+
+/* ==============================================
+   Large Devices (Desktops, 1200px and up)
+============================================== */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    h1 { font-size: 2.75rem; }
+    h2 { font-size: 2.25rem; }
+    h3 { font-size: 1.875rem; }
+}
+
+/* ==============================================
+   Medium Devices (Tablets, 768px to 1199px)
+============================================== */
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .container {
+        max-width: 960px;
+    }
+
+    h1 { font-size: 2.25rem; }
+    h2 { font-size: 1.875rem; }
+    h3 { font-size: 1.625rem; }
+
+    /* Sidebar */
+    .sidebar {
+        width: 220px;
+    }
+
+    .main-content {
+        margin-right: 220px;
+    }
+
+    [dir="rtl"] .main-content {
+        margin-left: 220px;
+        margin-right: 0;
+    }
+
+    /* Cards */
+    .glass-card {
+        padding: 15px;
+    }
+
+    /* Stats */
+    .stat-card .number {
+        font-size: 1.75rem;
+    }
+}
+
+/* ==============================================
+   Small Devices (Tablets, 576px to 767px)
+============================================== */
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 720px;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+    h5 { font-size: 1.125rem; }
+    h6 { font-size: 1rem; }
+
+    /* Sidebar - Collapsed */
+    .sidebar {
+        width: 70px;
+        overflow: hidden;
+    }
+
+    .sidebar:hover {
+        width: 250px;
+    }
+
+    .main-content {
+        margin-right: 70px;
+    }
+
+    [dir="rtl"] .main-content {
+        margin-left: 70px;
+        margin-right: 0;
+    }
+
+    .sidebar-text {
+        display: none;
+    }
+
+    .sidebar:hover .sidebar-text {
+        display: inline;
+    }
+
+    .logo-container h4 {
+        display: none;
+    }
+
+    .sidebar:hover .logo-container h4 {
+        display: block;
+    }
+
+    .user-info .sidebar-text {
+        display: none;
+    }
+
+    .sidebar:hover .user-info .sidebar-text {
+        display: block;
+    }
+
+    /* Cards */
+    .glass-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    /* Stats */
+    .stat-card {
+        padding: 20px 10px;
+    }
+
+    .stat-card .number {
+        font-size: 1.5rem;
+    }
+
+    .stat-card .label {
+        font-size: 0.85rem;
+    }
+
+    .card-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+
+    /* Tables */
+    .table {
+        font-size: 0.875rem;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 10px 12px;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .btn-sm {
+        padding: 5px 12px;
+        font-size: 0.8rem;
+    }
+
+    /* Modal */
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+
+    .modal-content {
+        border-radius: 12px;
+    }
+
+    /* Forms */
+    .form-control,
+    .form-select {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .form-label {
+        font-size: 0.85rem;
+    }
+
+    /* Dropdown */
+    .dropdown-menu {
+        font-size: 0.9rem;
+    }
+
+    /* Hide on tablet */
+    .d-md-none {
+        display: none !important;
+    }
+
+    .d-md-block {
+        display: block !important;
+    }
+
+    .d-md-flex {
+        display: flex !important;
+    }
+}
+
+/* ==============================================
+   Extra Small Devices (Phones, less than 576px)
+============================================== */
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 540px;
+        padding: 0 15px;
+    }
+
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+    h4 { font-size: 1.125rem; }
+    h5 { font-size: 1rem; }
+    h6 { font-size: 0.9rem; }
+
+    /* Sidebar - Mobile */
+    .sidebar {
+        width: 70px;
+        position: fixed;
+        z-index: 1000;
+        transform: translateX(-70px);
+        transition: transform 0.3s ease;
+    }
+
+    [dir="rtl"] .sidebar {
+        transform: translateX(70px);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+        width: 250px;
+    }
+
+    [dir="rtl"] .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-right: 0;
+        padding: 15px;
+    }
+
+    [dir="rtl"] .main-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .sidebar-text {
+        display: none;
+    }
+
+    .sidebar.show .sidebar-text {
+        display: inline;
+    }
+
+    /* Mobile Menu Toggle */
+    .mobile-menu-toggle {
+        display: block !important;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        backdrop-filter: blur(20px);
+    }
+
+    [dir="rtl"] .mobile-menu-toggle {
+        right: auto;
+        left: 20px;
+    }
+
+    /* Cards */
+    .glass-card {
+        padding: 12px;
+        margin-bottom: 12px;
+        border-radius: 10px;
+    }
+
+    .card-body {
+        padding: 12px;
+    }
+
+    .card-header,
+    .card-footer {
+        padding: 10px 12px;
+    }
+
+    /* Stats */
+    .stat-card {
+        padding: 15px 10px;
+    }
+
+    .stat-card .card-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.125rem;
+        margin-bottom: 10px;
+    }
+
+    .stat-card .number {
+        font-size: 1.375rem;
+        margin-bottom: 3px;
+    }
+
+    .stat-card .label {
+        font-size: 0.8rem;
+    }
+
+    .stat-card .stat-change {
+        font-size: 0.75rem;
+    }
+
+    /* Tables - Responsive */
+    .table-responsive {
+        margin-bottom: 15px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table {
+        font-size: 0.8rem;
+        min-width: 600px;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 8px 10px;
+        white-space: nowrap;
+    }
+
+    /* Stack table on mobile */
+    .table-mobile-stack thead {
+        display: none;
+    }
+
+    .table-mobile-stack tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        background: var(--glass);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .table-mobile-stack tbody td {
+        display: block;
+        text-align: right;
+        border: none;
+        padding: 8px 0;
+    }
+
+    .table-mobile-stack tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: inline-block;
+        margin-left: 10px;
+        color: var(--primary);
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 8px 18px;
+        font-size: 0.875rem;
+    }
+
+    .btn-lg {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+
+    .btn-sm {
+        padding: 5px 12px;
+        font-size: 0.75rem;
+    }
+
+    /* Full width buttons on mobile */
+    .btn-mobile-block {
+        width: 100%;
+        display: block;
+    }
+
+    /* Modal */
+    .modal-dialog {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+    }
+
+    .modal-content {
+        border-radius: 10px;
+    }
+
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding: 15px;
+    }
+
+    .modal-title {
+        font-size: 1.125rem;
+    }
+
+    /* Forms */
+    .form-control,
+    .form-select,
+    .input-group-text {
+        padding: 8px 12px;
+        font-size: 0.875rem;
+        border-radius: 8px !important;
+    }
+
+    .form-label {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+
+    .input-group .form-control {
+        border-radius: 0 8px 8px 0 !important;
+    }
+
+    .input-group-text {
+        border-radius: 8px 0 0 8px !important;
+    }
+
+    [dir="rtl"] .input-group .form-control {
+        border-radius: 8px 0 0 8px !important;
+    }
+
+    [dir="rtl"] .input-group-text {
+        border-radius: 0 8px 8px 0 !important;
+    }
+
+    /* Mobile Form Rows */
+    .row.g-3 {
+        --bs-gutter-x: 1rem;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    /* Alerts */
+    .alert {
+        padding: 10px 12px;
+        font-size: 0.875rem;
+        border-radius: 8px;
+    }
+
+    /* Badges */
+    .badge {
+        padding: 4px 10px;
+        font-size: 0.75rem;
+    }
+
+    /* Dropdown */
+    .dropdown-menu {
+        font-size: 0.875rem;
+        min-width: 200px;
+    }
+
+    .dropdown-item {
+        padding: 8px 12px;
+    }
+
+    /* Pagination */
+    .pagination {
+        font-size: 0.875rem;
+    }
+
+    .page-link {
+        padding: 6px 12px;
+    }
+
+    /* Charts */
+    canvas {
+        max-height: 250px !important;
+    }
+
+    /* Logo */
+    .logo img,
+    .logo-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .logo h4,
+    .logo-container h2 {
+        font-size: 1.125rem;
+    }
+
+    .logo-container p {
+        font-size: 0.8rem;
+    }
+
+    /* User Avatar */
+    .user-avatar {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+
+    /* Timeline */
+    .glass-timeline {
+        padding-right: 20px;
+    }
+
+    [dir="rtl"] .glass-timeline {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+    /* Dashboard Top Bar */
+    .d-flex.justify-content-between {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Hide on mobile */
+    .d-none.d-md-flex,
+    .d-none.d-md-block {
+        display: none !important;
+    }
+
+    .d-sm-none {
+        display: none !important;
+    }
+
+    .d-sm-block {
+        display: block !important;
+    }
+
+    .d-sm-flex {
+        display: flex !important;
+    }
+
+    /* Social Login Buttons */
+    .social-login {
+        flex-direction: column;
+    }
+
+    .btn-social {
+        width: 100%;
+    }
+
+    /* Footer Text */
+    .footer-text {
+        font-size: 0.75rem;
+        margin-top: 15px;
+    }
+
+    /* Glass Bubbles - Reduce on mobile */
+    .glass-bubble {
+        opacity: 0.5;
+    }
+
+    /* Glassmorphism - Less blur on mobile for performance */
+    .glass-card,
+    .glass-container,
+    .modal-content,
+    .dropdown-menu {
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+    }
+}
+
+/* ==============================================
+   Extra Small Devices (Phones, 320px to 575px)
+============================================== */
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    /* تحسين عرض الجداول على الشاشات الصغيرة */
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* تحسين القوائم الجانبية */
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        position: fixed;
+        z-index: 1040;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    
+    .sidebar.show {
+        transform: translateX(0);
+    }
+    
+    .main-content {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    
+    [dir="rtl"] .main-content {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    /* تحسين الأزرار */
+    .btn {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.875rem;
+    }
+    
+    /* تحسين العناوين */
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+    
+    /* تحسين النماذج */
+    .form-control {
+        font-size: 14px;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    /* تحسين البطاقات */
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    /* إخفاء العناصر غير الضرورية على الشاشات الصغيرة */
+    .d-none-mobile {
+        display: none !important;
+    }
+}
+
+/* ==============================================
+   Extra Extra Small Devices (320px to 375px)
+============================================== */
+
+@media (max-width: 375px) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.375rem; }
+    h3 { font-size: 1.125rem; }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .glass-card {
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 7px 15px;
+        font-size: 0.8rem;
+    }
+
+    .stat-card .number {
+        font-size: 1.25rem;
+    }
+
+    .stat-card .label {
+        font-size: 0.75rem;
+    }
+
+    .table {
+        font-size: 0.75rem;
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 0.8rem;
+        padding: 7px 10px;
+    }
+
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding: 12px;
+    }
+
+    /* Reduce glass blur for older devices */
+    .glass-card,
+    .glass-container {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+}
+
+/* ==============================================
+   Landscape Mode (Mobile)
+============================================== */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .sidebar {
+        overflow-y: auto;
+    }
+
+    .logo-container,
+    .user-info {
+        padding: 10px;
+    }
+
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .nav-link {
+        padding: 8px 15px;
+    }
+
+    .glass-card {
+        margin-bottom: 10px;
+    }
+}
+
+/* ==============================================
+   Touch Device Optimizations
+============================================== */
+
+@media (hover: none) and (pointer: coarse) {
+    /* Increase touch targets */
+    .btn,
+    .nav-link,
+    .dropdown-item,
+    .page-link {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    /* Remove hover effects on touch devices */
+    .glass-card:hover {
+        transform: none;
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+
+    /* Add active states instead */
+    .glass-card:active {
+        transform: scale(0.98);
+    }
+
+    .btn:active {
+        transform: scale(0.95);
+    }
+
+    /* Improve scrolling */
+    * {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* ==============================================
+   Print Responsive
+============================================== */
+
+@media print {
+    .sidebar,
+    .mobile-menu-toggle,
+    .btn,
+    .dropdown,
+    .pagination,
+    .no-print {
+        display: none !important;
+    }
+
+    .main-content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .glass-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+
+    .table {
+        page-break-inside: avoid;
+    }
+}

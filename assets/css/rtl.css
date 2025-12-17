@@ -1,0 +1,407 @@
+/* assets/css/rtl.css - RTL Support for Arabic */
+
+/* ==============================================
+   RTL Direction & Alignment
+============================================== */
+
+[dir="rtl"] body,
+html[lang="ar"] body {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] *,
+html[lang="ar"] * {
+    direction: rtl;
+}
+
+/* ==============================================
+   Text Alignment
+============================================== */
+
+[dir="rtl"] .text-left { text-align: right !important; }
+[dir="rtl"] .text-right { text-align: left !important; }
+
+[dir="rtl"] .text-start { text-align: right !important; }
+[dir="rtl"] .text-end { text-align: left !important; }
+
+/* ==============================================
+   Margins & Padding (RTL)
+============================================== */
+
+/* Margin Right */
+[dir="rtl"] .me-1, [dir="rtl"] .mx-1 { margin-left: 0.25rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-2, [dir="rtl"] .mx-2 { margin-left: 0.5rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-3, [dir="rtl"] .mx-3 { margin-left: 1rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-4, [dir="rtl"] .mx-4 { margin-left: 1.5rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-5, [dir="rtl"] .mx-5 { margin-left: 3rem !important; margin-right: 0 !important; }
+
+/* Margin Left */
+[dir="rtl"] .ms-1, [dir="rtl"] .mx-1 { margin-right: 0.25rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-2, [dir="rtl"] .mx-2 { margin-right: 0.5rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-3, [dir="rtl"] .mx-3 { margin-right: 1rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-4, [dir="rtl"] .mx-4 { margin-right: 1.5rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-5, [dir="rtl"] .mx-5 { margin-right: 3rem !important; margin-left: 0 !important; }
+
+/* Margin Start/End */
+[dir="rtl"] .ms-auto { margin-right: auto !important; margin-left: 0 !important; }
+[dir="rtl"] .me-auto { margin-left: auto !important; margin-right: 0 !important; }
+
+/* Padding Right */
+[dir="rtl"] .pe-1, [dir="rtl"] .px-1 { padding-left: 0.25rem !important; padding-right: 0 !important; }
+[dir="rtl"] .pe-2, [dir="rtl"] .px-2 { padding-left: 0.5rem !important; padding-right: 0 !important; }
+[dir="rtl"] .pe-3, [dir="rtl"] .px-3 { padding-left: 1rem !important; padding-right: 0 !important; }
+[dir="rtl"] .pe-4, [dir="rtl"] .px-4 { padding-left: 1.5rem !important; padding-right: 0 !important; }
+[dir="rtl"] .pe-5, [dir="rtl"] .px-5 { padding-left: 3rem !important; padding-right: 0 !important; }
+
+/* Padding Left */
+[dir="rtl"] .ps-1, [dir="rtl"] .px-1 { padding-right: 0.25rem !important; padding-left: 0 !important; }
+[dir="rtl"] .ps-2, [dir="rtl"] .px-2 { padding-right: 0.5rem !important; padding-left: 0 !important; }
+[dir="rtl"] .ps-3, [dir="rtl"] .px-3 { padding-right: 1rem !important; padding-left: 0 !important; }
+[dir="rtl"] .ps-4, [dir="rtl"] .px-4 { padding-right: 1.5rem !important; padding-left: 0 !important; }
+[dir="rtl"] .ps-5, [dir="rtl"] .px-5 { padding-right: 3rem !important; padding-left: 0 !important; }
+
+/* ==============================================
+   Borders (RTL)
+============================================== */
+
+[dir="rtl"] .border-start { border-left: none !important; border-right: 1px solid !important; }
+[dir="rtl"] .border-end { border-right: none !important; border-left: 1px solid !important; }
+
+[dir="rtl"] .border-start-0 { border-right: 0 !important; }
+[dir="rtl"] .border-end-0 { border-left: 0 !important; }
+
+/* Rounded Corners */
+[dir="rtl"] .rounded-start { border-top-right-radius: 0.25rem !important; border-bottom-right-radius: 0.25rem !important; border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important; }
+[dir="rtl"] .rounded-end { border-top-left-radius: 0.25rem !important; border-bottom-left-radius: 0.25rem !important; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important; }
+
+/* ==============================================
+   Float & Position (RTL)
+============================================== */
+
+[dir="rtl"] .float-start { float: right !important; }
+[dir="rtl"] .float-end { float: left !important; }
+
+[dir="rtl"] .start-0 { right: 0 !important; left: auto !important; }
+[dir="rtl"] .start-50 { right: 50% !important; left: auto !important; }
+[dir="rtl"] .start-100 { right: 100% !important; left: auto !important; }
+
+[dir="rtl"] .end-0 { left: 0 !important; right: auto !important; }
+[dir="rtl"] .end-50 { left: 50% !important; right: auto !important; }
+[dir="rtl"] .end-100 { left: 100% !important; right: auto !important; }
+
+/* ==============================================
+   Sidebar (RTL)
+============================================== */
+
+[dir="rtl"] .sidebar {
+    right: 0;
+    left: auto;
+    border-right: none;
+    border-left: 1px solid var(--glass-border);
+}
+
+[dir="rtl"] .main-content {
+    margin-left: 250px;
+    margin-right: 0;
+}
+
+[dir="rtl"] .nav-link {
+    border-right: none;
+    border-left: 3px solid transparent;
+}
+
+[dir="rtl"] .nav-link:hover,
+[dir="rtl"] .nav-link.active {
+    border-right: none;
+    border-left: 3px solid var(--primary);
+}
+
+[dir="rtl"] .nav-link i {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+/* ==============================================
+   Tables (RTL)
+============================================== */
+
+[dir="rtl"] .table thead th,
+[dir="rtl"] .table tbody td {
+    text-align: right;
+}
+
+/* ==============================================
+   Forms (RTL)
+============================================== */
+
+[dir="rtl"] .input-group-text {
+    border-radius: 0 10px 10px 0 !important;
+}
+
+[dir="rtl"] .input-group .form-control {
+    border-left: none !important;
+    border-right: 1px solid var(--glass-border) !important;
+    border-radius: 10px 0 0 10px !important;
+}
+
+[dir="rtl"] .form-check {
+    padding-right: 1.5em;
+    padding-left: 0;
+}
+
+[dir="rtl"] .form-check-input {
+    float: right;
+    margin-right: -1.5em;
+    margin-left: 0;
+}
+
+[dir="rtl"] .form-select {
+    background-position: left 0.75rem center;
+    padding-left: 2.25rem;
+    padding-right: 0.75rem;
+}
+
+/* ==============================================
+   Alerts (RTL)
+============================================== */
+
+[dir="rtl"] .alert {
+    border-right: none;
+    border-left: 4px solid;
+}
+
+[dir="rtl"] .alert-success {
+    border-left-color: var(--success);
+}
+
+[dir="rtl"] .alert-danger {
+    border-left-color: var(--danger);
+}
+
+[dir="rtl"] .alert-warning {
+    border-left-color: var(--warning);
+}
+
+[dir="rtl"] .alert-info {
+    border-left-color: var(--info);
+}
+
+/* ==============================================
+   Dropdown (RTL)
+============================================== */
+
+[dir="rtl"] .dropdown-menu {
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+
+[dir="rtl"] .dropdown-menu-end {
+    right: auto !important;
+    left: 0 !important;
+}
+
+/* ==============================================
+   Modal (RTL)
+============================================== */
+
+[dir="rtl"] .modal-header .btn-close {
+    margin: -0.5rem auto -0.5rem -0.5rem;
+}
+
+/* ==============================================
+   Breadcrumb (RTL)
+============================================== */
+
+[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+    float: right;
+    padding-left: 0.5rem;
+    padding-right: 0;
+    content: "«";
+}
+
+/* ==============================================
+   List Group (RTL)
+============================================== */
+
+[dir="rtl"] .list-group {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* ==============================================
+   Progress Bar (RTL)
+============================================== */
+
+[dir="rtl"] .progress-bar {
+    direction: ltr;
+}
+
+/* ==============================================
+   Tooltips (RTL)
+============================================== */
+
+[dir="rtl"] .tooltip .tooltip-arrow {
+    transform: scaleX(-1);
+}
+
+/* ==============================================
+   Offcanvas (RTL)
+============================================== */
+
+[dir="rtl"] .offcanvas-start {
+    right: 0;
+    left: auto;
+    border-right: none;
+    border-left: 1px solid var(--glass-border);
+    transform: translateX(100%);
+}
+
+[dir="rtl"] .offcanvas-end {
+    left: 0;
+    right: auto;
+    border-left: none;
+    border-right: 1px solid var(--glass-border);
+    transform: translateX(-100%);
+}
+
+[dir="rtl"] .offcanvas-start.show {
+    transform: translateX(0);
+}
+
+[dir="rtl"] .offcanvas-end.show {
+    transform: translateX(0);
+}
+
+/* ==============================================
+   Carousel (RTL)
+============================================== */
+
+[dir="rtl"] .carousel-control-prev {
+    right: 0;
+    left: auto;
+}
+
+[dir="rtl"] .carousel-control-next {
+    left: 0;
+    right: auto;
+}
+
+[dir="rtl"] .carousel-control-prev-icon {
+    transform: scaleX(-1);
+}
+
+[dir="rtl"] .carousel-control-next-icon {
+    transform: scaleX(-1);
+}
+
+/* ==============================================
+   Icons (RTL)
+============================================== */
+
+[dir="rtl"] .fa-chevron-left::before {
+    content: "\f054"; /* chevron-right */
+}
+
+[dir="rtl"] .fa-chevron-right::before {
+    content: "\f053"; /* chevron-left */
+}
+
+[dir="rtl"] .fa-arrow-left::before {
+    content: "\f061"; /* arrow-right */
+}
+
+[dir="rtl"] .fa-arrow-right::before {
+    content: "\f060"; /* arrow-left */
+}
+
+/* ==============================================
+   Custom Components (RTL)
+============================================== */
+
+/* Notification Badge */
+[dir="rtl"] .notification-badge {
+    right: auto;
+    left: 8px;
+}
+
+/* Timeline */
+[dir="rtl"] .glass-timeline {
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+[dir="rtl"] .glass-timeline::before {
+    right: 10px;
+    left: auto;
+}
+
+[dir="rtl"] .glass-timeline-item::before {
+    right: -20px;
+    left: auto;
+}
+
+/* Card Icon */
+[dir="rtl"] .card-icon {
+    margin: 0 0 15px auto;
+}
+
+/* Social Login Buttons */
+[dir="rtl"] .social-login {
+    direction: rtl;
+}
+
+/* Input Group Icons */
+[dir="rtl"] .input-group-text i {
+    transform: scaleX(-1);
+}
+
+/* Divider */
+[dir="rtl"] .divider::before {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+[dir="rtl"] .divider::after {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+/* ==============================================
+   Responsive RTL
+============================================== */
+
+@media (max-width: 768px) {
+    [dir="rtl"] .sidebar {
+        width: 70px;
+    }
+
+    [dir="rtl"] .main-content {
+        margin-left: 70px;
+    }
+}
+
+/* ==============================================
+   Numbers & Currency
+============================================== */
+
+[dir="rtl"] .number-ltr {
+    direction: ltr;
+    display: inline-block;
+}
+
+[dir="rtl"] .currency::after {
+    content: " ª";
+}
+
+/* ==============================================
+   Print RTL
+============================================== */
+
+@media print {
+    [dir="rtl"] * {
+        direction: rtl;
+        text-align: right;
+    }
+}
