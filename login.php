@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>*3,JD 'D/.HD - F8'E *#,J1 'D3J'1'*</title>
+    <title>تسجيل الدخول - نظام تأجير السيارات</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: white;
             position: relative;
             overflow: hidden;
@@ -217,6 +217,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
             -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-bottom: 5px;
+            font-size: 1.8rem;
         }
 
         .logo-container p {
@@ -403,6 +404,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
                 height: 60px;
                 font-size: 2rem;
             }
+            
+            .logo-container h2 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -424,8 +429,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
                 <div class="logo-icon">
                     <i class="fas fa-car"></i>
                 </div>
-                <h2>F8'E *#,J1 'D3J'1'*</h2>
-                <p>E1-('K (C! 3,QD /.HDC DDE*'(9)</p>
+                <h2>نظام تأجير السيارات</h2>
+                <p>مرحباً بك! سجّل دخولك للمتابعة</p>
             </div>
 
             <!-- Error Message -->
@@ -447,24 +452,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
             <!-- Login Form -->
             <form method="POST" action="login.php">
                 <div class="mb-3">
-                    <label class="form-label">'3E 'DE3*./E #H 'D(1J/ 'D%DC*1HFJ</label>
+                    <label class="form-label">اسم المستخدم أو البريد الإلكتروني</label>
                     <div class="input-group">
                         <span class="input-group-text">
                             <i class="fas fa-user"></i>
                         </span>
-                        <input type="text" name="username" class="form-control" placeholder="#/.D '3E 'DE3*./E" required
+                        <input type="text" name="username" class="form-control" placeholder="أدخل اسم المستخدم" required
                             autofocus>
                     </div>
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label">CDE) 'DE1H1</label>
+                    <label class="form-label">كلمة المرور</label>
                     <div class="input-group">
                         <span class="input-group-text">
                             <i class="fas fa-lock"></i>
                         </span>
                         <input type="password" name="password" id="password" class="form-control"
-                            placeholder="#/.D CDE) 'DE1H1" required>
+                            placeholder="أدخل كلمة المرور" required>
                         <span class="input-group-text" onclick="togglePassword()"
                             style="cursor: pointer; border-radius: 0 10px 10px 0 !important;">
                             <i class="fas fa-eye" id="toggleIcon"></i>
@@ -476,21 +481,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="remember" id="remember">
                         <label class="form-check-label" for="remember">
-                            *0C1FJ
+                            تذكرني
                         </label>
                     </div>
-                    <a href="#" class="text-link">F3J* CDE) 'DE1H1</a>
+                    <a href="#" class="text-link">نسيت كلمة المرور؟</a>
                 </div>
 
                 <button type="submit" name="login" class="btn btn-login">
                     <i class="fas fa-sign-in-alt me-2"></i>
-                    *3,JD 'D/.HD
+                    تسجيل الدخول
                 </button>
             </form>
 
             <!-- Divider -->
             <div class="divider">
-                <span>#H 3,D /.HDC 9(1</span>
+                <span>أو سجل دخولك عبر</span>
             </div>
 
             <!-- Social Login -->
@@ -508,9 +513,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
             <!-- Register Link -->
             <div class="text-center mt-4">
                 <p class="mb-0">
-                    DJ3 D/JC -3'(
+                    ليس لديك حساب؟
                     <a href="register.php" class="text-link">
-                        <strong>3,QD 'D"F</strong>
+                        <strong>سجّل الآن</strong>
                     </a>
                 </p>
             </div>
@@ -518,11 +523,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
 
         <!-- Footer -->
         <div class="footer-text">
-            <p class="mb-1">� 2024 F8'E *#,J1 'D3J'1'* 'DE*B/E - ,EJ9 'D-BHB E-AH8)</p>
+            <p class="mb-1">© 2024 نظام تأجير السيارات المتقدم - جميع الحقوق محفوظة</p>
             <p class="mb-0">
                 <small>
-                    <a href="#" class="text-link">'D41H7 H'D#-C'E</a> |
-                    <a href="#" class="text-link">3J'3) 'D.5H5J)</a>
+                    <a href="#" class="text-link">الشروط والأحكام</a> |
+                    <a href="#" class="text-link">سياسة الخصوصية</a>
                 </small>
             </p>
         </div>
